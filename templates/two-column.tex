@@ -1,0 +1,267 @@
+%--------------------------------------
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%--------------------------------------
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%--------------------------------------
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%--------------------------------------
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%--------------------------------------
+
+
+
+\documentclass[]{two-column}
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhf{}
+
+% ATS READABILITY
+
+% \input{glyphtounicode}
+% \pdfgentounicode=1 
+ 
+\begin{document}
+
+%--------------------------------------
+%
+%     LAST UPDATED DATE
+%
+%--------------------------------------
+
+%--------------------------------------
+%
+%     TITLE NAME
+%
+%--------------------------------------
+\namesection {}{Uday Jain}{ \urlstyle{same}
+215.966.7107 | \href{mailto:uj9.uday@gmail.com}{uj9.uday@gmail.com}\\
+
+\href{https://www.linkedin.com/in/uday-jain-uj/}{LinkedIn} | 
+\href{https://github.com/udayjain26}{GitHub} | 
+\href{https://udayjain.me}{UdayJain.me}
+}
+
+%--------------------------------------
+%
+%     COLUMN ONE
+%
+%--------------------------------------
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%--------------------------------------
+%     EDUCATION
+%--------------------------------------
+
+\section{Education} 
+
+\subsection{Drexel University}
+\vspace{1pt}
+\descript{BS in Computer Science}
+\location{June 2023 | Philadelphia, PA}
+\vspace{1pt}
+College of Computing and Informatics \\
+\vspace{1pt}
+\location{ Cum. GPA: 3.68 / 4.0 }
+\vspace{3pt}
+\descript{Concentrations:}
+Machine Learning\\
+Data Structures and Algorithms\\ 
+\vspace{3pt}
+\descript {Minors:}
+ Finance \\
+ Mathematics \\
+ \vspace{3pt}
+ \descript{Awards:}
+A.J Drexel Scholarship \\
+Dean’s List September 2018 - Present\\
+\sectionsep
+
+
+%--------------------------------------
+%     LINKS
+%--------------------------------------
+
+% \section{Links} 
+% Facebook:// \href{https://facebook/dd}{\bf dd} \\
+% Github:// \href{https://github.com/deedydas}{\bf deedydas} \\
+% LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\bf debarghyadas} \\
+% YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+% Twitter://  \href{https://twitter.com/debarghya_das}{\bf @debarghya\_das} \\
+% Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+
+
+%--------------------------------------
+%     SKILLS
+%--------------------------------------
+
+\section{Skills}
+\vspace{1pt}
+\subsection{Languages}
+\vspace{1pt}
+Python \textbullet{}   Java \textbullet{} C \textbullet{} Dart \textbullet{} JavaScript
+ Haskell \textbullet{} Racket \textbullet{} MySQL \textbullet{} LaTeX\ \\
+\vspace{5pt}
+\subsection{Frameworks / Packages}
+\vspace{1pt}
+Flutter \textbullet{} Django \textbullet{} Express \textbullet{} Node Pandas \textbullet{} NumPy \textbullet{} Matplotlib Scikit-learn \textbullet{} Openpyxl \textbullet{} SciPy 
+\vspace{5pt}
+\subsection{Tools}
+\vspace{1pt}
+Git \textbullet{} Jupyter \textbullet{} Insightly \textbullet{} MongoDB Firebase \textbullet{} PyCharm \textbullet{} IntelliJ \textbullet{} Figma VSCode \textbullet{} Bloomberg \textbullet{} Bash \\ 
+\vspace{5pt}
+\subsection{Statistics / ML}
+\vspace{1pt}
+Linear/Logistic Regression \textbullet{} PCR\\
+Decomposition \textbullet{} Decision Trees\\
+Graph Theory \textbullet{} Statistical Analysis\\
+
+\sectionsep
+
+%--------------------------------------
+%     COURSEWORK
+%--------------------------------------
+
+\section{Coursework}
+\vspace{1pt}
+\subsection{Undergraduate}
+\vspace{3pt}\
+Artificial Intelligence 1, 2\\
+Machine Learning\\
+Data Structures and Algorithms 1, 2\\
+Linear Algebra and Statistics 1, 2\\
+Calculus 1, 2, 3, 4 \\
+Discrete Mathematics \\
+Web and Mobile Development\\
+Adv Object-Oriented Python 1, 2 \\
+Software and Systems Architecture \\
+Financial Institutions and Markets \\
+Investment Securities\\
+\sectionsep
+
+
+%--------------------------------------
+%
+%     COLUMN TWO
+%
+%--------------------------------------
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%--------------------------------------
+%     EXPERIENCE
+%--------------------------------------
+
+\section{Experience}
+\runsubsection{AES Clean Technology}
+\descript{| Software Engineering Intern}
+\location{March 2021 - September 2021, March 2022 - Present  | Montgomeryville, PA}
+\vspace{\topsep}
+\begin{tightemize}
+\item Developed applications from scratch using Python3 to provide a data transfer interface between OST, Excel, Sage Estimating, Insightly, Zapier and SAP CR
+\vspace{1pt}
+\item Parsed and analyzed accounting data, labor productivity metrics, and historical bids data worth 4 years to revamp over 10 costing models using Scikit-learn
+\vspace{1pt}
+\item Automated computation of budgetary requirements for installing clean room systems by developing and back-testing models using Python3
+\vspace{1pt}
+\item Implemented AppScript, VBA and Python3 scripts to automate data transfer from excel project estimate files to Insightly CRM and Constant Contact
+\end{tightemize}
+\sectionsep
+\runsubsection{CSL Behring}
+\descript{| Database Analyst Intern }
+\location{March 2020 - September 2020  | King of Prussia, PA}
+\vspace{1pt}
+\begin{tightemize}
+\item Deployed and implemented a 3 node MongoDB replica set for 2 research applications using MongoDB enterprise edition from start to finish
+
+\vspace{1pt}
+\item Monitored and analyzed over 5 key metrics to maintain database health and functionality using MongoDB Ops manager along with Atlas and Compass
+
+\vspace{1pt}
+\item Administered alerts, security rules, backups, restores, account management, and deployments for the database in a team of 11 people
+
+\vspace{1pt}
+\item Designed and developed Python3 scripts to parse flat CSV data of over 30 fields into over 2000 MongoDB Documents
+
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Drexel University}
+\descript{| Teaching Assistant }
+\location{September 2019 - March 2020 (Seasonal: 2020, 2021, 2022)| Philadelphia, PA}
+\vspace{1pt}
+\begin{tightemize}
+\item Facilitated, graded, and taught over 100 graduate level students in advanced DSA and SD courses on topics such as sorting algorithms and design principles 
+\vspace{1pt}
+\item Educated and guided over 150 junior-level students by utilizing material from respective courses during office hours, lecture classes, and lab sections
+\vspace{1pt}
+\item Compiled and graded 300 to 400 students' assignments, worksheets, homework, quizzes, and lab sheets for core sophomore-level python sequence
+\vspace{1pt}
+\item Coached students in understanding concepts, problems, and ideas pertaining to computer science, engineering, and mathematics 2 hours daily
+\end{tightemize}
+\sectionsep
+\vspace{-5pt}
+
+
+\section{Projects}
+\runsubsection{Excel JMS App}
+\descript{| Developer}
+\location{March 2020 - April 2021  | Excel Printers Pvt Ltd}
+% \vspace{\topsep}
+\begin{tightemize}
+\vspace{1pt}
+\item Created a mobile application using flutter for a small business that acted as a job-card management system to increase productivity by 20\%
+\end{tightemize}
+\sectionsep
+\runsubsection{Freshmen Social Media Platform}
+\descript{| Lead Developer}
+\location{January 2019 - June 2019  | Drexel University}
+\vspace{1pt}
+\begin{tightemize}
+\item Launched a social media application built in Django and Firebase for over 500 freshmen to meet and communicate with other students
+\vspace{1pt}
+\item Programmed 3 throwaway prototypes in ExpressJS, NodeJS, and MongoDB to determine and test software requirements and specifications
+\end{tightemize}
+\section{Activities}
+Beta Chi Theta Fraternity Inc (Vice president of Internal Affairs), International Students Union (Event Coordinator), Resident Assistant
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
